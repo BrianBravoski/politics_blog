@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const categories = [
   { name: "React", slug: "react" },
-  { name: "Web Development", slug: "web-dev" },
+  { name: "Web Development", slug: "web-dev" }
 ];
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
               Politics
             </span>
           </Link>
-        </div>
+        </div> 
       </div>
       <div className="hidden md:float-left md:contents">
         {categories.map((category) => (
