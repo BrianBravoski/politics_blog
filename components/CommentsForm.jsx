@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useRef } from "react";
-
 import { submitComment } from "../services";
 
 const CommentsForm = ({ slug }) => {
@@ -8,16 +7,38 @@ const CommentsForm = ({ slug }) => {
   const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-  const commentEl = useRef();
-  const nameEl = useRef();
-  const emailEl = useRef();
-  const storeDataEl = useRef();
+  const [formData, setFormData] = useState({name: null, email:null, comment:null, storeData:false});
+  // const commentEl = useRef();
+  // const nameEl = useRef();
+  // const emailEl = useRef();
+  // const storeDataEl = useRef();
 
   useEffect(() => {
-    nameEl.current.value = window.localStorage.getItem('name');
-    emailEl.current.value = window.localStorage.getItem('email')
-  }, [])
+    setLocalStorage(window.localStorage);
+    const initialFormData ={
+    name: window.localStorage.getItem('name'),
+    email: window.localStorage.getItem('email'),
+    storeData: window.localStorage.getItem('name') || window.localStorage.getItem('email'),
+    };
+    setFormData(initialFormData)
+  }, []);
   
+
+  const onInputChange =(e) => {
+    const {target} = e;
+    if(target.type === 'checkbox'){
+      setFormData((prevState) => ({
+        ...prevState,
+        [target.name]: target.checked,
+      }));
+    } else {
+      setFormData((prevState) => ({
+        ...prevState,
+        [target.name]: target.value,
+      }));
+    }
+  };
+
 
   const handleCommentSubmission = () => {
     setError(false);

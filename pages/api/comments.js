@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { GraphQLClient,gql } from "graphql"
+import { GraphQLClient,gql } from "graphql-request"
 
 
 const graphqlAPI = process.env.NEXT_PUBLIC_POLITICS_ENDPOINT;
 
 
-export default async function asynchandler(req, res) {
+export default async function comment(req, res) {
   // const {name, email, slug, comment} =req.body;
 
   const graphQLClient = new GraphQLClient (graphqlAPI, {
@@ -15,7 +15,7 @@ export default async function asynchandler(req, res) {
   }) ;
 
   const query = gql`
-    mutation CreateComment ($name; String!, $email: String!, $comment: String!, $slug: String!){
+    mutation CreateComment($name; String!, $email: String!, $comment: String!, $slug: String!){
       createComment(data: {name: $name, email: $email, comment: $comment, post :{connect: {slug: $slug} } } ){ id }
     }
     `
