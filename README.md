@@ -27,6 +27,7 @@ This section shows the major frameworks and libraries used in the creation of th
 * [![Next][next.js]][next-url]
 * [![React][React.js]][React-url]
 * [![Tailwind][Tailwind.css]][Tailwind-url]
+* [![GraphQL][GraphQL]][Graphql-url]
 
 <!-- LICENSE -->
 ## License
@@ -43,3 +44,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [React-url]: https://reactjs.org/
 [Tailwind.css]: https://img.shields.io/badge/Tailwind-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
 [Tailwind-url]: https://tailwindcss.com
+[GraphQL]:https://img.shields.io/badge/GraphQL-20232A?style=for-the-badge&logo=graphql&logoColor=61DAFB
+[Graphql-url]: https://graphql.com
