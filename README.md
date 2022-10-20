@@ -41,4 +41,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[Tailwind.css]: https://img.shields.io/badge/Tailwind-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
 [Tailwind-url]: https://tailwindcss.com
