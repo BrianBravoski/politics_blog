@@ -14,7 +14,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+This is a blog post application that is mainly built upon graphql and its graphql content management system hypergraph.
+The website's main functoinality is to allow users to view the blogs saved in the cms. They can also leave comments which are reviewed beore being published.
 
 
 
