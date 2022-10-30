@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#READ ME
 
-## Getting Started
+<br />
 
-First, run the development server:
+![Contributors][contributors-shield]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<div align="center">
+  <a href="https://github.com/BrianBravoski/gym_web">
+    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+  </a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3 align="center">The Blog</h3>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+This is a blog post application that is mainly built upon graphql and its graphql content management system hypergraph.
+The website's main functoinality is to allow users to view the blogs saved in the cms. They can also leave comments which are reviewed beore being published.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+The link is https://politicsblog.vercel.app/
+ 
+### Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This section shows the major frameworks and libraries used in the creation of the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* [![Next][next.js]][next-url]
+* [![React][React.js]][React-url]
+* [![Tailwind][Tailwind.css]][Tailwind-url]
+* [![GraphQL][GraphQL]][Graphql-url]
 
-## Deploy on Vercel
+<!-- LICENSE -->
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<!--markdown Links-->
+[contributors-shield]: https://img.shields.io/github/contributors/BrianBravoski/gym_web.svg?style=for-the-badge
+[product-screenshot]: src/assets/images/Chuma-Gym.png
+[next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Tailwind.css]: https://img.shields.io/badge/Tailwind-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
+[Tailwind-url]: https://tailwindcss.com
+[GraphQL]:https://img.shields.io/badge/GraphQL-20232A?style=for-the-badge&logo=graphql&logoColor=61DAFB
+[Graphql-url]: https://graphql.com
